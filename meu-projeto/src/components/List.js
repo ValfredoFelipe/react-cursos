@@ -1,4 +1,4 @@
-
+import Item from "./item"
 
 
 function List(){
@@ -7,8 +7,9 @@ function List(){
         <>
            <h1>Minha Lista</h1>
            <ul>
-            <li>Item 1</li>
-            <li>Item 2</li>
+           < Item marca='Ferrari' lancamento={1985}/>
+           < Item marca='Fiat' lancamento={1990}/>
+           <Item />
            </ul>
         </>
         
