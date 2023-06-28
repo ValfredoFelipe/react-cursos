@@ -7,13 +7,21 @@ import Frase from './components/Frase';
 import List from './components/List';
 import Evento from './components/Eventos';
 import Form from './components/Form';
-
+import Condicional from './components/Condicional';
+import OutraLista from './components/outralista';
+import { useState } from 'react';
+import Saudacao from './components/saudacao';
+import SeuNome from './components/SeuNome';
 
 
 function App() {
 
   
-  const nome='João'
+  const nome1='João'
+
+  const meusItens =['react', 'Angular', 'vue']
+
+  const[nome, setNome] = useState()
   
 
   return (
@@ -21,7 +29,7 @@ function App() {
     
     <HelloWorld/>
     <SayMyName nome='maria'/>
-    <SayMyName nome={nome}/>
+    <SayMyName nome={nome1}/>
     <Frase/>
     <Pessoa
     nome='Felipe'
@@ -31,9 +39,27 @@ function App() {
     />
     <List/>
     <Evento numero='1'/>
-    <Evento numero='2'/>
+    
     <Form/>
+
+    <h1>Renderização condicional</h1>
+    <Condicional/>
+
+    <h1>Renderização de listas</h1>
+    <OutraLista itens={meusItens}/>
+
+    <h1>State Lift</h1>
+
+    <SeuNome setNome={setNome}/>
+    <Saudacao nome={nome}/>
+
+
+
+
+
     </div>
+
+    
     
   );
 }
