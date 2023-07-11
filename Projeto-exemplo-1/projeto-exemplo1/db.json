@@ -10,8 +10,14 @@
       "cost": 0,
       "services": [],
       "id": 1
+    },
+    {
+      "cost": 0,
+      "services": [],
+      "name": "VALFREDO FELIPE DE SOUZA BRITO",
+      "budget": "111",
+      "id": 2
     }
-    
   ],
   "categories": [
     {
